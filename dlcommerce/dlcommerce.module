@@ -1,0 +1,7 @@
+<?php
+
+function dlcommerce_module_datalayer_meta() {
+  return array(
+    'price',
+  );
+}

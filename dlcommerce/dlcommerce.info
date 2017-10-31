@@ -1,0 +1,5 @@
+name = DLCommerce
+description = Add dataLaer commerce propertis.
+dependencies[] = datalayer
+package = Vetta24
+core = 7.x
