@@ -1,7 +1,0 @@
-name = Vetta24 company info
-description = Administer custom company info.
-package = Vetta24
-core = 7.x
-
-dependencies[] = variable
-configure = admin/commerce/config/company-info
