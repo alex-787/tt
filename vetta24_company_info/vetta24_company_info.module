@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * Implements hook_permission().
+ */
+
+function vetta24_company_info_permission() {
+  return array(
+    'administer custom company info' => array(
+      'title' => t('Administer Company Information'),
+      'description' => t('Allows to edit general company information like phones or address.'),
+    ),
+  );
+}
+/**
+ * Implements hook_menu().
+ */
+
+function vetta24_company_info_menu() {
+  return array(
+   'admin/commerce/config/company-info' => array(
+    //'admin/config/system/company-info' => array(
+      'title' => 'Company Information',
+      'description' => 'Phones, Fax, Address, Email Signature and other site infomation.',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('variable_module_form', 'vetta24_company_info'),
+      'access arguments' => array('administer custom company info'),
+    )
+  );
+}
+function vetta24_company_info_commerce_price_formatted_components_alter (&$components, $price, $entity){
+    $order_total = $components['commerce_price_formatted_amount']['title'];
+    $components['commerce_price_formatted_amount']['title']=t($order_total);
+}
+
+/*
+ * Implements hook_commerce_google_tag_manager_product_data_alter().
+ */
+
+//function vetta24_company_info_form_alter(&$form, &$form_state, $form_id) {
+  //dsm($form_id);  // print form ID to messages
+ 
+//dpm($form);  // pretty print array using Krumo to messages
+
+//}
+/*
+ * Implements hook_commerce_google_tag_manager_product_data_alter().
+ */
+//function vetta24_company_info_commerce_google_tag_manager_product_data_alter(&$product_data, $line_item_wrapper, $order) {
+  // $product_data array passed as reference
+  // $line_item_wrapper EntityMetadataWrapper object as context
+  // $order EntityMetadataWrapper object as context
+//var_dump($order);
+//}

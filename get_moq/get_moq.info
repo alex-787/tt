@@ -1,0 +1,7 @@
+name = Get moq
+description = Get moq and set quantity Add To Cart
+package = Vetta24
+version = 7.x-1.0
+core = 7.x
+
+dependencies[] = commerce

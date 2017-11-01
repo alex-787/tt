@@ -1,0 +1,66 @@
+# $Id$
+#
+# Russian translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  vetta24_company_info.variable.inc: n/a
+#  vetta24_company_info.module: n/a
+#  vetta24_company_info.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-04-24 21:00+0300\n"
+"PO-Revision-Date: 2017-04-24 21:00+0300\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Russian <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+
+#: vetta24_company_info.variable.inc:7
+msgid "Address"
+msgstr "Адрес"
+
+#: vetta24_company_info.variable.inc:12
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: vetta24_company_info.variable.inc:17
+msgid "E-mail address"
+msgstr "Email-адрес"
+
+#: vetta24_company_info.variable.inc:22
+msgid "Email signature"
+msgstr "E-mail подпись"
+
+#: vetta24_company_info.module:10
+msgid "Administer Company Information"
+msgstr "Администрирование информации о компании"
+
+#: vetta24_company_info.module:11
+msgid "Allows to edit general company information like phones or address."
+msgstr "Позволяет редактировать общую информацию о компании, такие как телефоны или адреса"
+
+#: vetta24_company_info.module:23
+msgid "Company Information"
+msgstr "Информация о компании"
+
+#: vetta24_company_info.module:24
+msgid "Phones, Fax, Address, Email Signature and other site infomation."
+msgstr "Телефоны, факсы, адреса, электронной подписи и другия информация"
+
+#: vetta24_company_info.info:0
+msgid "Vetta24 company info"
+msgstr "Информация о компании"
+
+#: vetta24_company_info.info:0
+msgid "Administer custom company info."
+msgstr "Администрирование информации о компании"
+
+#: vetta24_company_info.info:0
+msgid "Vetta24"
+msgstr "Vetta24"
+
