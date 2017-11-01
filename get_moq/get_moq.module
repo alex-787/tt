@@ -1,38 +1,13 @@
 <?php
 //Устанавливаем количество товаров при нажатии Add to Cart по полю field_moq
 function get_moq_form_commerce_cart_add_to_cart_form_alter(&$form, &$form_state, $form_id) {
-	//drupal_set_message('<pre>' . print_r($form,true) . '</pre>');
 	// field_moq пустое,
-	//dpm($form);
 	if (isset($form_state['default_product']->field_moq['und'][0]['value'])) {
-		// если быть точнее то пустой только amount, currency code заполнен, 
-		// hook_field_is_empty возвращает TRUE, тоесть при  не залодненой одной котонке поля 
-		// поле считается пустым
 		$form['quantity']['#value'] = $form_state['default_product']->field_moq['und'][0]['value'];
-		//dpm($order_wrapper->owner->field_discount_limit->amount->value());
+
 	}
 	
 	/* if (substr($form_id, 0, strlen('commerce_cart_add_to_cart_form')) == 'commerce_cart_add_to_cart_form') {
 		$form['submit']['#attributes']['onclick'] = "dataLayer.push({'event': 'addToCart'});";
 	} */
 }
-/* 
-
-dataLayer.push({
-  'event': 'addToCart',
-  'ecommerce': {
-    'currencyCode': 'EUR',
-    'add': {                                // 'add' actionFieldObject measures.
-      'products': [{                        //  adding a product to a shopping cart.
-        'name': 'Triblend Android T-Shirt',
-        'id': '12345',
-        'price': '15.25',
-        'brand': 'Google',
-        'category': 'Apparel',
-        'variant': 'Gray',
-        'quantity': 1
-       }]
-    }
-  }
-});
- */
