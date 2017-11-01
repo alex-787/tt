@@ -1,13 +1,10 @@
-```php
 <?php
-
+//Изменение номера заказа
 function custom_order_numb_commerce_order_presave($order) {
   if (isset($order->order_id)) {
     // Alter order number by multplying the order id with 63.
-    //$order->order_number = sprintf('%08d', $order->order_id * 63);
 	$order->order_number = 'OPT-' . date("dmy.His");
-
   }
 }
 ?>
-```
+
