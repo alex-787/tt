@@ -1,3 +1,4 @@
+```php
 <?php
 
 function custom_order_numb_commerce_order_presave($order) {
@@ -9,3 +10,4 @@ function custom_order_numb_commerce_order_presave($order) {
   }
 }
 ?>
+```
