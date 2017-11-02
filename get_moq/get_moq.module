@@ -4,9 +4,7 @@ function get_moq_form_commerce_cart_add_to_cart_form_alter(&$form, &$form_state,
 	// field_moq пустое,
 	if (isset($form_state['default_product']->field_moq['und'][0]['value'])) {
 		$form['quantity']['#value'] = $form_state['default_product']->field_moq['und'][0]['value'];
-
 	}
-	
 	/* if (substr($form_id, 0, strlen('commerce_cart_add_to_cart_form')) == 'commerce_cart_add_to_cart_form') {
 		$form['submit']['#attributes']['onclick'] = "dataLayer.push({'event': 'addToCart'});";
 	} */
